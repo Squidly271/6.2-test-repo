@@ -1,0 +1,67 @@
+            "Name": "TEST-ONLY2",
+            "Repository": "google/cadvisor:latest",
+            "Registry": "https://registry.hub.docker.com/u/google/cadvisor/",
+            "Network": "bridge",
+            "Privileged": "false",
+            "Support": {},
+            "Overview": "cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, and histograms of complete historical resource usage. This data is exported by container and machine-wide.",
+            "Category": {},
+            "WebUI": {},
+            "Icon": "http://i.imgur.com/stlnoKR.png",
+            "ExtraParams": {},
+            "Description": "cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, and histograms of complete historical resource usage. This data is exported by container and machine-wide.",
+            "Networking": {
+                "Mode": "bridge",
+                "Publish": [
+                    {
+                        "Port": [
+                            {
+                                "HostPort": "8081",
+                                "ContainerPort": "8080",
+                                "Protocol": "tcp"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Data": {
+                "Volume": [
+                    {
+                        "HostDir": "/",
+                        "ContainerDir": "/rootfs",
+                        "Mode": "ro"
+                    },
+                    {
+                        "HostDir": "/var/run",
+                        "ContainerDir": "/var/run",
+                        "Mode": "rw"
+                    },
+                    {
+                        "HostDir": "/sys",
+                        "ContainerDir": "/sys",
+                        "Mode": "ro"
+                    },
+                    {
+                        "HostDir": "/var/lib/docker/",
+                        "ContainerDir": "/var/lib/docker/",
+                        "Mode": "ro"
+                    }
+                ]
+            },
+            "Environment": {
+                "Variable": [
+                    {
+                        "Value": "true",
+                        "Name": "detach",
+                        "Mode": ""
+                    }
+                ]
+            },
+            "Config": [
+                "8081",
+                "/",
+                "/var/run",
+                "/sys",
+                "/var/lib/docker/",
+                "true"
+            ],
