@@ -75,3 +75,69 @@
                         "Mask": "false"
                     }
                 },
+                {
+                    "@attributes": {
+                        "Name": "Path 1",
+                        "Target": "/rootfs",
+                        "Default": "/",
+                        "Mode": "ro",
+                        "Description": "Container Path: /rootfs",
+                        "Type": "Path",
+                        "Display": "always",
+                        "Required": "true",
+                        "Mask": "false"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "Name": "Path 2",
+                        "Target": "/var/run",
+                        "Default": "/var/run",
+                        "Mode": "rw",
+                        "Description": "Container Path: /var/run",
+                        "Type": "Path",
+                        "Display": "always",
+                        "Required": "true",
+                        "Mask": "false"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "Name": "Path 3",
+                        "Target": "/sys",
+                        "Default": "/sys",
+                        "Mode": "ro",
+                        "Description": "Container Path: /sys",
+                        "Type": "Path",
+                        "Display": "always",
+                        "Required": "true",
+                        "Mask": "false"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "Name": "Path 4",
+                        "Target": "/var/lib/docker/",
+                        "Default": "/var/lib/docker/",
+                        "Mode": "ro",
+                        "Description": "Container Path: /var/lib/docker/",
+                        "Type": "Path",
+                        "Display": "always",
+                        "Required": "true",
+                        "Mask": "false"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "Name": "Variable 1",
+                        "Target": "detach",
+                        "Default": "true",
+                        "Mode": "",
+                        "Description": "Container Variable: detach",
+                        "Type": "Variable",
+                        "Display": "always",
+                        "Required": "false",
+                        "Mask": "false"
+                    }
+                }
+            ],
